@@ -132,7 +132,7 @@ No files are written; a full plan is printed to console and saved to `dry_run_re
 
 ---
 
-### 3. `check_npz_overlap_faiss.py`
+### 3. `overlap.py`
 
 Detects overlapping identities between two NPZ dataset folders by comparing per-identity representative embeddings using FAISS (cosine similarity via inner product on L2-normalised vectors).
 
@@ -141,7 +141,7 @@ Detects overlapping identities between two NPZ dataset folders by comparing per-
 **Usage**
 
 ```bash
-python check_npz_overlap_faiss.py \
+python overlap.py \
     --folder1    /path/to/cleaned_npz \
     --folder2    /path/to/g360k_npz_folder \
     --tolerance  0.6 \
